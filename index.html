@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="icon" href="./logo black.png" type="image/x-icon">
+   
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+   
+
+    <title>Tailwind css</title>
+  </head>
+  <body>
+    <nav data-aos="fade-down" data-aos-delay="50" class="container mx-auto py-6 px-11 "> 
+        <div class="flex justify-between items-center">
+            <div>
+                <img src="./logo white.png" alt="tailwind logo" width="200px">
+            </div>
+            <div class="hidden flex  items-center md:flex space-x-6">
+                <a class=" text-slate-700 hover:translate-y-1 duration-700  hover:text-slate-300  " href="#">Portfolio</a>
+                <a class=" text-slate-700 hover:translate-y-1 duration-700  hover:text-slate-300" href="#">About</a>
+                <a class=" text-slate-700 hover:translate-y-1 duration-700  hover:text-slate-300" href="#">Conatact</a>
+                <a class=" text-slate-700 hover:translate-y-1 duration-700  hover:text-slate-300" href="#">Social</a>
+                <a class=" hover:translate-y-1 duration-700 bg-orange-500 text-white py-2 px-4 rounded-full hover:bg-slate-900 duration-700" href="#">Call Me</a>
+            </div>
+            <button id="mobile-btn" class="md:hidden"><i class="ri-menu-line text-2xl"></i>
+            </button>
+        </div>
+        <div class="md:hidden ">
+          <div  id="mobile-menu" class=" absolute flex hidden z-50  flex-col bg-gray-50  py-8 left-6 right-6 items-center space-y-4 font-bold drop-shadow-lg border-gray-300">
+            <a   " href="#">Portfolio</a>
+            <a  href="#">About</a>
+            <a  href="#">Conatact</a>
+            <a href="#">Social</a>
+            <a  class="hover:translate-y-1 duration-700 bg-orange-500 text-white py-2 px-4 rounded-full hover:bg-slate-900 duration-700" href="#">Call Me</a>
+          </div>
+        </div>
+       
+      </nav>
+        <section class="px-14" id="hero">
+          <div class="container space-x-6 mx-auto   flex flex-col md:flex-row   ">
+            <div data-aos="fade-right" data-aos-delay="300" class=" md:w-1/2 flex flex-col text-center md:text-left text-slate-900  py-6 justify-center space-y-5"><h1 class=" font-bold text-3xl md:text-5xl">Rapidly build modern websites without ever leaving your HTML. </h1>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem culpa at illo similique repellat iure minus veniam et eligendi, explicabo reprehenderit numquam sunt quos nesciunt illum impedit eum neque! Odit?
+    
+              </p>
+              <a class=" hover:translate-y-1 duration-700 bg-orange-500 text-white  self-center md:self-start py-3 px-8 rounded-full duration-700 hover:bg-slate-900" href="#">Call Me</a>
+    
+            </div>
+              <div data-aos="fade-left" data-aos-delay="600" class="  md:w-1/2 md:p-10">
+                <img src="./undraw_programming_re_kg9v.svg" alt="tailwind hero">
+              </div>
+          </div>
+        </section>
+        <section class="author px-14">
+          <div class=" mx-auto text-center  my-32 font-bold  text-4xl">
+            <h2 data-aos="fade-down" data-aos-delay="70">Get a better idea of how our components work </h2>
+            <p data-aos="fade-down" data-aos-delay="50" class=" text-sm leading-5 text-slate-600  max-w-4xl m-auto my-8">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis excepturi fugiat porro repudiandae aliquam quasi ipsa sapiente recusandae, ullam qui odit reprehenderit nemo nulla dolor asperiores architecto vel minus molestiae?</p>
+            <div class=" mt-12  flex flex-col  items-center md:flex-row  space-y-10 md:space-y-0 md:space-x-5">
+              <div data-aos="fade-right" data-aos-delay="70" class="bg-slate-100 hover:translate-y-4 duration-700   md:w-1/3 flex items-center flex-col p-6 space-y-2 rounded-lg border border-slate-300">
+              
+                <img class="w-16 -mt-12 rounded-full border-2 border-orange-500" src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="">
+              <h5 class=" text-lg text-slate-900 bold">Adam Sandler</h5>
+              <p class=" text-sm leading-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro modi uibusdam consequuntur, sapiente rerum inventore perferendis temporibus ab nobis!
+                
+              </p>
+              
+              </div>
+              <div data-aos="fade-right" data-aos-delay="150" class="bg-slate-100 hover:translate-y-4 duration-700   md:w-1/3 flex items-center flex-col p-6 space-y-2 rounded-lg border border-slate-300">
+              
+                <img class="w-16 -mt-12 rounded-full border-2 border-orange-500" src="https://tailwindui.com/img/avatar-1.jpg" alt="">
+              <h5 class=" text-lg text-slate-900 bold">Json Sandyr</h5>
+              <p class=" text-sm leading-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro modi uibusdam consequuntur, sapiente rerum inventore perferendis temporibus ab nobis!
+                
+              </p>
+              
+              </div>
+              <div data-aos="fade-right" data-aos-delay="200"  class="bg-slate-100 md:w-1/3 hover:translate-y-4 duration-700  flex items-center flex-col p-6 space-y-2 rounded-lg border border-slate-300">
+              
+                <img class="w-16 -mt-12 rounded-full border-2 border-orange-500" src="https://tailwindui.com/img/avatar-2.jpg" alt="">
+              <h5 class=" text-lg text-slate-900 bold">Jhone Haxton</h5>
+              <p class=" text-sm leading-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro modi uibusdam consequuntur, sapiente rerum inventore perferendis temporibus ab nobis!
+                
+              </p>
+              
+              </div>
+            
+            </div>
+
+          </div>
+        </section>
+        <section >
+        <div data-aos="fade-right" data-aos-delay="50"  class=" flex justify-center items-center  mx-auto bg-orange-500  h-20">
+          <h1  class="   sm:text-2xl text-center  font-bold text-white text-3xl capitalize">move event faster with tailwindui.</h1>
+        </div>
+        </section>
+        <footer class="bg-slate-900">
+          <div class="conatainer mx-auto md:spa text-white py-10 px-14 flex flex-col justify-between md:flex-row">
+            <div class="flex flex-col justify-between space-y-12 md:space-y-2 md:items-start">
+              <div>
+              <img class="h-12" src="./logo black.png " alt="">
+            </div>
+            <div class="flex  space-x-4 px-4">
+              <a href="#"><i class="hover:translate-y-1 duration-700  hover:text-orange-500 ri-facebook-circle-fill"></i></a>
+              <a href="#"><i class="hover:translate-y-1 duration-700  hover:text-orange-500 ri-instagram-fill"></i></a>
+              <a href="#"><i class="hover:translate-y-1 duration-700  hover:text-orange-500 ri-mail-line"></i></a>
+              <a href="#"><i class="hover:translate-y-1 duration-700  hover:text-orange-500 ri-youtube-fill"></i></a>
+              <a href="#"><i class= "hover:translate-y-1 duration-700 hover:text-orange-500  ri-twitter-fill"></i></a>
+            </div>
+          
+          </div>
+          <div class="flex justify-around space-x-32">
+            <div class="flex flex-col space-y-3">
+              <a href="" class="hover:text-slate-300 duration-700 hover:translate-y-1">Home</a> 
+              <a href="" class="hover:text-slate-300 duration-700 hover:translate-y-1">About</a> 
+              <a href="" class="hover:text-slate-300 duration-700 hover:translate-y-1">Conatact</a> 
+            </div>
+            <div class="flex flex-col space-y-3 "> 
+              <a href="" class="hover:text-slate-300 hover:translate-y-1 duration-700">Imprint</a> 
+              <a href="" class="hover:text-slate-300  hover:translate-y-1 duration-700">Privacy</a> 
+              <a href="" class="hover:text-slate-300 hover:translate-y-1 duration-700">Credits</a> 
+            </div>
+          </div>
+           <div class="flex flex-col justify-between mt-7 md:mt-0 ">
+            <form class="" action="#">
+              <input type="text" placeholder="Subscribe to Newsletter" class="flex-1 py-2 px-6 rounded-full">
+              <button class=" bg-orange-500 py-2 px-4  rounded-full hover:translate-y-1 duration-700 hover:bg-slate-500 ">GO</button>
+              <div class=" text-center mt-6 hidden md:block">copyright $copy2023 ALL Right reserved</div>
+
+            </form>
+           </div>
+
+          </div>
+        </footer>
+  <script src="braine.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  </body>
+</html>
